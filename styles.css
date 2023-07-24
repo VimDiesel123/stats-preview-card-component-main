@@ -78,3 +78,20 @@ h6 {
 }
 
 /* My css */
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --muted-dark-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  --white-100: hsl(0, 0%, 100%);
+  --white-75: hsla(0, 0%, 100%, 0.75);
+  --white-60: hsla(0, 0%, 100%, 0.6);
+
+  --fs-body: 15px;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --ff-title: "Inter", sans-serif;
+  --ff-body: "Lexend Deca", sans-serif;
+}
