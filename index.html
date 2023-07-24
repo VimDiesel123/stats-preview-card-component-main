@@ -14,6 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lexend+Deca&display=swap"
     rel="stylesheet">
 
+  <!--My CSS-->
+  <link rel="stylesheet" href="styles.css">
+
   <title>Frontend Mentor | Stats preview card component</title>
 
 </head>
@@ -22,16 +25,20 @@
   <main>
     <article class="card">
       <div class="card__body">
-        <h2>Get <span>insights</span> that help your business grow.</h2>
+        <h2 class="card__title text--bold">Get <span>insights</span> that help your business grow.</h2>
         <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
           experience, and overall efficiency.</p>
         <div class="stats">
-          <div><span>10k+</span>companies</div>
-          <div><span>314</span>templates</div>
-          <div><span>12m+</span>queries</div>
+          <div class="stats__item"><span class="text--bold">10k+</span>companies</div>
+          <div class="stats__item"><span class="text--bold">314</span>templates</div>
+          <div class="stats__item"><span class="text--bold">12m+</span>queries</div>
         </div>
       </div>
-      <img src="./images/image-header-desktop.jpg" alt="">
+      <div class="card__img"></div>
+      <!-- <picture class="card__img">
+        <source media="(min-width:550px)" srcset="./images/image-header-desktop.jpg">
+        <img src="./images/image-header-mobile.jpg" alt="">
+      </picture> -->
     </article>
   </main>
 </body>

@@ -95,3 +95,73 @@ h6 {
   --ff-title: "Inter", sans-serif;
   --ff-body: "Lexend Deca", sans-serif;
 }
+
+body {
+  background-color: var(--very-dark-blue);
+  color: var(--white-60);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-body);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+}
+
+.card {
+  background-color: var(--muted-dark-blue);
+  place-self: center center;
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  border-radius: 0.5rem;
+}
+
+.card__img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  flex-basis: 30vh;
+  background: var(--soft-violet) url(./images/image-header-mobile.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  order: 1;
+}
+
+.card__body {
+  order: 2;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card__title {
+  margin-bottom: 1rem;
+}
+
+.card__title span {
+  color: var(--soft-violet);
+}
+
+.stats {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__item span {
+}
+
+/* Utilities */
+
+.text--bold {
+  font-family: var(--ff-title);
+  font-weight: var(--fw-bold);
+  color: var(--white-100);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
