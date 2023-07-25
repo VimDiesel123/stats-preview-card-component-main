@@ -165,3 +165,35 @@ main {
   font-size: 1.75rem;
   line-height: 1.2;
 }
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex-direction: row;
+    max-width: 70%;
+  }
+
+  .card__img {
+    flex-basis: 50%;
+    order: 2;
+    flex: 1;
+    background: var(--soft-violet) url(./images/image-header-desktop.jpg);
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-repeat: no-repeat;
+  }
+
+  .card__title {
+    font-size: 2rem;
+  }
+
+  .card__body {
+    flex-basis: 50%;
+    order: 1;
+    padding: 4rem 6rem 4rem 4rem;
+    text-align: left;
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
