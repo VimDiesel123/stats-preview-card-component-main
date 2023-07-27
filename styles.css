@@ -153,9 +153,6 @@ main {
   flex-direction: column;
 }
 
-.stats__item span {
-}
-
 /* Utilities */
 
 .text--bold {
@@ -169,7 +166,7 @@ main {
 @media screen and (min-width: 900px) {
   .card {
     flex-direction: row;
-    max-width: 70%;
+    max-width: 1080px;
   }
 
   .card__img {
